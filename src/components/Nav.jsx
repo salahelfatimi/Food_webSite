@@ -26,20 +26,20 @@ export default function Nav(){
     }      };
 
     // Scrool to show other nav 
+    
     useEffect(() => {
     window.addEventListener('scroll', () => {
         if (window.pageYOffset > 80) {
-          setVisible(false)
-          
+          setVisible(true)
         } else {
-            setVisible(true)
+            setVisible(false)
         }
       })},[])
 
     return(
         <>  
             <header className='md:block hidden'>
-            <div className={`${visible===true?"":" relative -top-80"} `}>
+            <div className={`${visible===false?"":" relative -top-80"} `}>
                 <div className={`bg-[#ffffff]  drop-shadow-xl p-3 ${roboto.className}`}>
                     <div className=" container flex  items-center justify-between">
                         <div className="flex  items-center ">
@@ -70,7 +70,7 @@ export default function Nav(){
                     </div>
                 </div>
             </div>
-            <div className={`bg-[#ffffff]  drop-shadow-xl  p-3 fixed top-0  w-full z-[999] ${roboto.className} ${visible===false?"duration-700":"hidden"}`} >
+            <div className={`bg-[#ffffff]  drop-shadow-xl  p-3 fixed top-0  w-full z-[999] ${roboto.className} ${visible===true?"duration-700":"hidden"}`} >
                 <div className='container flex justify-between items-center'>
                     <Image src="/logo.png" width={100} height={500} alt='logo' />
                     <div className='text-black  font-medium text-xs flex gap-10'>
@@ -88,11 +88,19 @@ export default function Nav(){
                 <div className={`bg-[#ffffff]  drop-shadow-xl   p-3 fixed top-0  w-full z-[999]   ${roboto.className} nav-container`} >
                     <div className='container flex justify-between items-center'>
                         <Image src="/logo.png" width={100} height={500} alt='logo' />
-                        <button onClick={()=>{setOpen(!open)}}><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+                        <div className='flex gap-2'>
+                            <div className="flex  items-center  ">
+                                <input type="text" placeholder="Search and hit enter..." name="search" id="search"  className="focus:border-none  p-1 outline-none text-black text-xs font-medium" />
+                            </div>
+                            <button onClick={()=>{setOpen(!open)}}><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+
+                        </div>
+
                     </div>
                 </div>
                 <div className={`bg-[#ffffff]  drop-shadow-xl fixed  top-0 z-50 w-full  p-3 pt-8  ${roboto.className} nav-container ${open? "duration-700  " : "-translate-y-96 duration-700 "} `} >
-                <div className={`container text-black pt-8  font-medium text-xs flex flex-col items-center  gap-10   `}>
+                <div className={`container text-black pt-8  font-medium text-xs flex flex-col items-center  gap-8   `}>
+                                    
                                     <Link onClick={() => setOpen(false)} className={`hover:text-[#eaa480] duration-500 ${router === '/' ? 'text-[#eaa480]' : ''}`} href={`/`}>HOME</Link>
                                     <Link onClick={() => setOpen(false)} className={`hover:text-[#eaa480] duration-500 ${router === '/Pages' ? 'text-[#eaa480]' : ''}`} href={`#`}>PAGES</Link>
                                     <Link onClick={() => setOpen(false)} className={`hover:text-[#eaa480] duration-500 ${router === '/Categories' ? 'text-[#eaa480]' : ''}`} href={`#`}>CATEGORIES</Link>
