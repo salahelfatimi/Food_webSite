@@ -30,6 +30,7 @@ export default function Nav(){
     window.addEventListener('scroll', () => {
         if (window.pageYOffset > 80) {
           setVisible(false)
+          
         } else {
             setVisible(true)
         }
