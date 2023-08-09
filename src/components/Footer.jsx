@@ -8,7 +8,7 @@ const roboto = Roboto({ subsets: ["latin"], weight: "500" });
 export default function Footer() {
   return (
     <>
-      <footer className={`bg-[#ffffff]  `}>
+      <footer className={`bg-[#ffffff] mt-auto `}>
         <div className=" container flex flex-col items-center  gap-4">
           <div className="text-black  text-2xl font-semibold">Follow Us On Instagram</div>
           <div className="text-[#eaa480ff] text-sm">@salah.fatimi</div>
