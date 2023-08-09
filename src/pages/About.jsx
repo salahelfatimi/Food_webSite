@@ -1,13 +1,16 @@
 import Image from "next/image";
 
 export const getServerSideProps = async (id) => {
-  const res = await fetch(`https://hypermetropic-pyram.000webhostapp.com/wp-json/wp/v2/posts/1`);
+  const res = await fetch(
+    `https://hypermetropic-pyram.000webhostapp.com/wp-json/wp/v2/posts/1`
+  );
   const repo = await res.json();
   return { props: { repo } };
 };
 export default function About({ repo }) {
   return (
     <>
+     
       <div dangerouslySetInnerHTML={{ __html: repo.content.rendered }} />
       {/* <div className="bg-[#ffffff] p-8">
         <div className="container mx-auto">

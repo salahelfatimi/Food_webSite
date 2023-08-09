@@ -38,12 +38,12 @@ export default function Nav(){
 
     return(
         <>  
-            <header className='md:block hidden'>
-            <div className={`${visible===false?"":" relative -top-80"} `}>
+            <header className='md:block hidden '>
+            <div >
                 <div className={`bg-[#ffffff]  drop-shadow-xl p-3 ${roboto.className}`}>
                     <div className=" container flex  items-center justify-between">
                         <div className="flex  items-center ">
-                            <input type="text" placeholder="Search and hit enter..." name="search" id="search"  className="focus:border-none p-1 outline-none text-black text-xs font-medium" />
+                            <input type="text" placeholder="Search and hit enter..." name="search" id="search"  className="focus:border-none p-1 outline-none text-black bg-[#ffffff] text-xs font-medium" />
                             <svg  xmlns="http://www.w3.org/2000/svg" width="16" className="text-black hover:text-[#eaa480] duration-500 transition-colors" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                         </div>
                         <div className="text-black flex gap-4">
@@ -70,7 +70,7 @@ export default function Nav(){
                     </div>
                 </div>
             </div>
-            <div className={`bg-[#ffffff]  drop-shadow-xl  p-3 fixed top-0  w-full z-[999] ${roboto.className} ${visible===true?"duration-700":"hidden"}`} >
+            <div className={`bg-[#ffffff]  drop-shadow-xl  p-3  top-0 fixed  w-full  z-[999] ${roboto.className} ${visible===true?"duration-700":"hidden"}`} >
                 <div className='container flex justify-between items-center'>
                     <Image src="/logo.png" width={100} height={500} alt='logo' />
                     <div className='text-black  font-medium text-xs flex gap-10'>
@@ -84,13 +84,15 @@ export default function Nav(){
                 </div>
             </div>
             </header>
-            <header className='md:hidden block pb-16'>
-                <div className={`bg-[#ffffff]  drop-shadow-xl   p-3 fixed top-0  w-full z-[999]   ${roboto.className} nav-container`} >
-                    <div className='container flex justify-between items-center'>
+
+
+            <header className='md:hidden block  pb-[45px]'>
+                <div className={`bg-[#ffffff]  drop-shadow-xl   p-3  top-0 fixed   w-full z-[999]   ${roboto.className} nav-container`} >
+                    <div className='container flex justify-between items-center '>
                         <Image src="/logo.png" width={100} height={500} alt='logo' />
                         <div className='flex gap-2'>
                             <div className="flex  items-center  ">
-                                <input type="text" placeholder="Search and hit enter..." name="search" id="search"  className="focus:border-none  p-1 outline-none text-black text-xs font-medium" />
+                                <input type="text" placeholder="Search and hit enter..." name="search" id="search"  className="focus:border-none bg-[#ffffff]  p-1 outline-none text-black text-xs font-medium" />
                             </div>
                             <button onClick={()=>{setOpen(!open)}}><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
 
