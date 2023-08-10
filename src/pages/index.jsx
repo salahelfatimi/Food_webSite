@@ -46,7 +46,7 @@ const Index = ({ repo }) => {
     const image = Images.find((Image) => Image.id === imageId);
     setImage(image);
     const interval = setInterval(() => {
-      const nextImageId = imageId === 4 ? 1 : imageId + 1;
+      const nextImageId = imageId === 5 ? 1 : imageId + 1;
       setIamgeId(nextImageId);
     }, 5000);
 
