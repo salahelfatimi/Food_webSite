@@ -7,6 +7,7 @@ const Layout = ({ children }) => {
     <div>
       <Head>
         <title>Food</title>
+        <link rel="icon" href="/dish.png" sizes="any" />
       </Head>
       <div className=" flex flex-col h-screen justify-between ">
         <Nav />

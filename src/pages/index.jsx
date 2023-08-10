@@ -57,7 +57,7 @@ const Index = ({ repo }) => {
 
   return (
     <>
-      <div className="  p-4">
+      <div className="p-4">
         <div className="  container justify-center drop-shadow-2xl">
           <div className="  lg:flex   ">
             <div className="lg:w-[60%] relative">
@@ -82,7 +82,7 @@ const Index = ({ repo }) => {
                   className={`${ele.id===imageId?"border-[#eaa480]  scale-95":"border-[#fcf9f7]"} hover:scale-95 border-l-4   font-serif flex items-center  gap-4 p-4 transition duration-300 ease-in-out transform  focus:outline-none`}
                 >
                   <span className={`font-bold sm:text-4xl ${ele.id===imageId?"text-[#eaa480]":""}`}>0{ele.id}</span>
-                  <span className="text-black text-xs text-start sm:text-xl">
+                  <span className="text-black text-xs text-start sm:text-xl ">
                     {ele.title}
                   </span>
                 </button>
