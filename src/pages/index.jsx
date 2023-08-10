@@ -9,7 +9,7 @@ import Link from "next/link";
 // };
 const Index = ({ repo }) => {
   const [imageId, setIamgeId] = useState(1);
-  const [srcImage, setSrcImage] = useState("");
+  const [image, setImage] = useState("");
   const Images = [
     {
       id: 1,
@@ -44,14 +44,14 @@ const Index = ({ repo }) => {
   ];
   useEffect(() => {
     const image = Images.find((Image) => Image.id === imageId);
-    setSrcImage(image.src);
+    setImage(image);
     const interval = setInterval(() => {
       const nextImageId = imageId === 4 ? 1 : imageId + 1;
       setIamgeId(nextImageId);
-    }, 5000); 
+    }, 5000);
 
     return () => {
-      clearInterval(interval); 
+      clearInterval(interval);
     };
   }, [imageId]);
 
@@ -60,8 +60,17 @@ const Index = ({ repo }) => {
       <div class="  p-4">
         <div class="  container justify-center drop-shadow-2xl">
           <div class="  lg:flex   ">
-            <div class="lg:w-[60%] ">
-              <img src={srcImage} class="w-full max-h-[300px]  lg:max-h-[550px]" alt="" />
+            <div class="lg:w-[60%] relative">
+              <img
+                src={image.src}
+                class="w-full max-h-[300px] lg:max-h-[550px] brightness-75"
+                alt=""
+              />
+              <div class="absolute bottom-7 left-4  text-white p-2">
+               
+                <p class=" font-mono">{image.date}</p>
+                <h3 class="font-serif capitalize  text-2xl">{image.title}</h3>
+              </div>
             </div>
             <div class="lg:w-[40%] bg-[#fcf9f7] flex flex-col justify-around">
               {Images.map((ele, key) => (
@@ -73,7 +82,9 @@ const Index = ({ repo }) => {
                   class="font-serif flex items-center  gap-2 p-4 transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none"
                 >
                   <span class="font-bold sm:text-4xl">0{ele.id}</span>
-                  <span class="text-black text-xs text-start sm:text-xl">{ele.title}</span>
+                  <span class="text-black text-xs text-start sm:text-xl">
+                    {ele.title}
+                  </span>
                 </button>
               ))}
             </div>
