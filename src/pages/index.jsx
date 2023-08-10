@@ -57,32 +57,32 @@ const Index = ({ repo }) => {
 
   return (
     <>
-      <div class="  p-4">
-        <div class="  container justify-center drop-shadow-2xl">
-          <div class="  lg:flex   ">
-            <div class="lg:w-[60%] relative">
+      <div className="  p-4">
+        <div className="  container justify-center drop-shadow-2xl">
+          <div className="  lg:flex   ">
+            <div className="lg:w-[60%] relative">
               <img
                 src={image.src}
-                class="w-full max-h-[300px] lg:max-h-[550px] brightness-75"
+                className="w-full max-h-[300px] lg:max-h-[550px] brightness-75"
                 alt=""
               />
-              <div class="absolute bottom-7 left-4  text-white p-2">
+              <div className="absolute bottom-7 left-4  text-white p-2">
                
-                <p class=" font-mono">{image.date}</p>
-                <h3 class="font-serif capitalize  text-2xl">{image.title}</h3>
+                <p className=" font-mono">{image.date}</p>
+                <h3 className="font-serif capitalize  text-2xl">{image.title}</h3>
               </div>
             </div>
-            <div class="lg:w-[40%] bg-[#fcf9f7] flex flex-col justify-around">
+            <div className="lg:w-[40%] bg-[#fcf9f7] flex flex-col justify-around">
               {Images.map((ele, key) => (
                 <button
                   key={key}
                   onClick={() => {
                     setIamgeId(ele.id);
                   }}
-                  class="font-serif flex items-center  gap-2 p-4 transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none"
+                  className={`${ele.id===imageId?"border-[#eaa480]  scale-95":"border-[#fcf9f7]"} hover:scale-95 border-l-4   font-serif flex items-center  gap-4 p-4 transition duration-300 ease-in-out transform  focus:outline-none`}
                 >
-                  <span class="font-bold sm:text-4xl">0{ele.id}</span>
-                  <span class="text-black text-xs text-start sm:text-xl">
+                  <span className={`font-bold sm:text-4xl ${ele.id===imageId?"text-[#eaa480]":""}`}>0{ele.id}</span>
+                  <span className="text-black text-xs text-start sm:text-xl">
                     {ele.title}
                   </span>
                 </button>
