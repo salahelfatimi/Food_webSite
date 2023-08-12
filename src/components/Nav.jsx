@@ -56,7 +56,7 @@ export default function Nav(){
                     
                 </div>
                 <div className={`bg-[#ffffff] pt-6 pb-10 ${roboto.className}  `}>
-                    <div className=' container flex flex-col items-center  gap-4'>
+                    <div className=' container flex flex-col items-center  gap-8'>
                         <Image src="/logo.png"   width={100} height={500}  alt='logo'/>
                         <div className='  text-black font-medium text-xs flex  gap-14 '>
                             <Link className={`hover:text-[#eaa480] duration-500 ${router === '/' ? 'text-[#eaa480]' : ''}`} href={`/`}>HOME</Link>
@@ -67,8 +67,12 @@ export default function Nav(){
                             <Link className={`hover:text-[#eaa480] duration-500 ${router === '/Contact' ? 'text-[#eaa480]' : ''}`} href={`/Contact`}>CONTACT</Link>
 
                         </div>
+                        <img src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/foo-curve.png" alt="" />
+
                     </div>
+                    
                 </div>
+                
             </div>
             <div className={`bg-[#ffffff]  drop-shadow-xl  p-3  top-0 fixed  w-full  z-[999] ${roboto.className} ${visible===true?"duration-700":"hidden"}`} >
                 <div className='container flex justify-between items-center'>
@@ -83,6 +87,7 @@ export default function Nav(){
                     </div>
                 </div>
             </div>
+            
             </header>
 
 

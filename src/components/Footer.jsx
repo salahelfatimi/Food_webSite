@@ -11,8 +11,11 @@ export default function Footer() {
       <footer className={`bg-[#ffffff] mt-auto `}>
         <div className=" container flex flex-col items-center  gap-4">
           <div className="text-black  text-2xl font-semibold">Follow Us On Instagram</div>
-          <div className="text-[#eaa480ff] text-sm">@salah.fatimi</div>
-          <div className="border-y-2 text-black  grid grid-cols-2 sm:grid-cols-3 lg:flex gap-12 py-8">
+          <Link target="_blank" href="https://www.instagram.com/salah.elfatimi/" className="text-[#eaa480ff] text-sm">@salah.fatimi</Link>
+          <img src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/foo-curve.png" alt="" />
+
+          <div className=" text-black  grid grid-cols-2 sm:grid-cols-3 lg:flex gap-12 py-4 ">
+            
             <Link href="#">
               <div className="flex items-center duration-500 transition-colors hover:text-[#eaa480]">
                 <svg
@@ -108,7 +111,7 @@ export default function Footer() {
                   <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                   <rect x="2" y="9" width="4" height="12"></rect>
                   <circle cx="4" cy="4" r="2"></circle>
-                </svg>{" "}
+                </svg>
                 <span className="ml-1 text-xs  uppercase">linkedin</span>
               </div>
             </Link>
@@ -133,6 +136,8 @@ export default function Footer() {
               </div>
             </Link>
           </div>
+          <img src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/foo-curve.png" alt="" />
+
           <div>
             <p className=" text-black text-center text-xs font-mono pb-3">
               Copyright &copy;{new Date().getFullYear()} All rights reserved |
