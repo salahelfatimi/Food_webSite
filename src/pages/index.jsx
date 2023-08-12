@@ -232,7 +232,9 @@ const Index = ({ repo }) => {
                     alt="curve"
                     className=" max-w-[150px]"
                   />
-                   <span className="text-xs font-semibold text-center">ABOUT ME</span>
+                  <span className="text-xs font-semibold text-center">
+                    ABOUT ME
+                  </span>
                   <img
                     src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
                     alt="curve"
@@ -403,7 +405,9 @@ const Index = ({ repo }) => {
                       src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
                       alt=""
                     />
-                    <span className="font-mono text-black text-xs font-semibold text-center">LATEST POSTS</span>
+                    <span className="font-mono text-black text-xs font-semibold text-center">
+                      LATEST POSTS
+                    </span>
                     <img
                       className="max-w-[110px]  "
                       src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
@@ -454,7 +458,9 @@ const Index = ({ repo }) => {
                       src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
                       alt=""
                     />
-                    <span className="font-mono text-black text-xs font-semibold text-center">NEWSLETTER</span>
+                    <span className="font-mono text-black text-xs font-semibold text-center">
+                      NEWSLETTER
+                    </span>
                     <img
                       className="max-w-[100px]   "
                       src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
@@ -502,7 +508,9 @@ const Index = ({ repo }) => {
                       src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
                       alt=""
                     />
-                    <span className="font-mono text-black text-xs font-semibold text-center">POPULAR TAGS</span>
+                    <span className="font-mono text-black text-xs font-semibold text-center">
+                      POPULAR TAGS
+                    </span>
                     <img
                       className="max-w-[100px] "
                       src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
@@ -510,16 +518,16 @@ const Index = ({ repo }) => {
                     />
                   </div>
                   <div className="grid grid-cols-2 text-center gap-4 p-4">
-      {repo?.map((ele, key) => (
-        <Link
-          key={key} // Make sure to add a unique key for each element in the array
-          href="#" // Replace '#' with the actual link destination
-          className="border px-4 py-2 uppercase text-black hover:text-[#eaa480] duration-500"
-        >
-          {ele.name}
-        </Link>
-      ))}
-    </div>
+                    {repo?.map((ele, key) => (
+                      <Link
+                        key={key} // Make sure to add a unique key for each element in the array
+                        href="#" // Replace '#' with the actual link destination
+                        className="border px-4 py-2 uppercase text-black hover:text-[#eaa480] duration-500"
+                      >
+                        {ele.name}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               </>
             </div>
