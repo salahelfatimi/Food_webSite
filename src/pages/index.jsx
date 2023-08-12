@@ -232,7 +232,7 @@ const Index = ({ repo }) => {
                     alt="curve"
                     className=" max-w-[150px]"
                   />
-                   <span className="text-xs font-semibold">ABOUT ME</span>
+                   <span className="text-xs font-semibold text-center">ABOUT ME</span>
                   <img
                     src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
                     alt="curve"
@@ -266,7 +266,7 @@ const Index = ({ repo }) => {
                       src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
                       alt=""
                     />
-                    <span className="font-mono text-black text-xs font-semibold ">
+                    <span className="font-mono text-black text-xs font-semibold text-center ">
                       SUBSCRIBE & FOLLOW
                     </span>
                     <img
@@ -403,7 +403,7 @@ const Index = ({ repo }) => {
                       src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
                       alt=""
                     />
-                    <span className="font-mono text-black text-xs font-semibold">LATEST POSTS</span>
+                    <span className="font-mono text-black text-xs font-semibold text-center">LATEST POSTS</span>
                     <img
                       className="max-w-[110px]  "
                       src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
@@ -454,7 +454,7 @@ const Index = ({ repo }) => {
                       src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
                       alt=""
                     />
-                    <span className="font-mono text-black text-xs font-semibold">NEWSLETTER</span>
+                    <span className="font-mono text-black text-xs font-semibold text-center">NEWSLETTER</span>
                     <img
                       className="max-w-[100px]   "
                       src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
@@ -502,7 +502,7 @@ const Index = ({ repo }) => {
                       src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
                       alt=""
                     />
-                    <span className="font-mono text-black text-xs font-semibold">POPULAR TAGS</span>
+                    <span className="font-mono text-black text-xs font-semibold text-center">POPULAR TAGS</span>
                     <img
                       className="max-w-[100px] "
                       src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
