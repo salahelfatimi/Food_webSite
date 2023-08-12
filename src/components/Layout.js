@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
       </Head>
       <div className=" flex flex-col h-screen justify-between ">
         <Nav />
-        <main className="bg-[#ffffff]  ">{children}</main>
+        <main className="bg-[#ffffff] ">{children}</main>
         <Footer />
       </div>
     </div>

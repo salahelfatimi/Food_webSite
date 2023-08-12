@@ -77,8 +77,8 @@ const Index = ({ repo }) => {
             </div>
           </div>
         </div>
-        <div className=" container md:flex gap-10">
-          <div className="xl:w-[70%] ">
+        <div className=" container lg:flex gap-10 ">
+          <div className="xl:w-[70%]  ">
             {Gride.map((ele, key) => (
               <div key={key}>
                 <div className="md:flex   gap-8 py-12 ">
@@ -159,7 +159,7 @@ const Index = ({ repo }) => {
                     </span>
                     <Link href="#" className="flex items-center gap-1 pt-6">
                       <span className=" hover:text-[#eaa480] hover:pr-2 duration-500 font-mono text-sm">
-                        COUNTINUE READING{" "}
+                        COUNTINUE READING
                       </span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -230,11 +230,13 @@ const Index = ({ repo }) => {
                   <img
                     src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
                     alt="curve"
+                    className=" max-w-[150px]"
                   />
-                  ABOUT ME
+                   <span className="text-xs font-semibold">ABOUT ME</span>
                   <img
                     src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
                     alt="curve"
+                    className=" max-w-[150px]"
                   />
                 </div>
                 <div class="w-[200px] h-[200px] overflow-hidden">
@@ -260,15 +262,15 @@ const Index = ({ repo }) => {
                 <div className="flex flex-col items-center ">
                   <div className="flex gap-6">
                     <img
-                      className="max-w-[80px]  "
+                      className="max-w-[100px]  "
                       src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
                       alt=""
                     />
-                    <span className="font-mono text-black ">
+                    <span className="font-mono text-black text-xs font-semibold ">
                       SUBSCRIBE & FOLLOW
                     </span>
                     <img
-                      className="max-w-[80px] "
+                      className="max-w-[100px] "
                       src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
                       alt=""
                     />
@@ -401,7 +403,7 @@ const Index = ({ repo }) => {
                       src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
                       alt=""
                     />
-                    <span className="font-mono text-black ">LATEST POSTS</span>
+                    <span className="font-mono text-black text-xs font-semibold">LATEST POSTS</span>
                     <img
                       className="max-w-[110px]  "
                       src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
@@ -448,18 +450,18 @@ const Index = ({ repo }) => {
                 <div className="flex flex-col items-center ">
                   <div className="flex  gap-6 pt-8">
                     <img
-                      className="max-w-[200px]  "
+                      className="max-w-[100px]  "
                       src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
                       alt=""
                     />
-                    <span className="font-mono text-black ">NEWSLETTER</span>
+                    <span className="font-mono text-black text-xs font-semibold">NEWSLETTER</span>
                     <img
-                      className="max-w-[200px]   "
+                      className="max-w-[100px]   "
                       src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
                       alt=""
                     />
                   </div>
-                  <div className="">
+                  <div className=" flex items-center flex-col text-center gap-2">
                     <span>
                       Subscribe our newsletter gor get notification about new
                       updates, information discount, etc.
@@ -496,13 +498,13 @@ const Index = ({ repo }) => {
                 <div className="flex flex-col items-center ">
                   <div className="flex  gap-6 pt-8">
                     <img
-                      className="max-w-[200px]  "
+                      className="max-w-[100px]  "
                       src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
                       alt=""
                     />
-                    <span className="font-mono text-black ">POPULAR TAGS</span>
+                    <span className="font-mono text-black text-xs font-semibold">POPULAR TAGS</span>
                     <img
-                      className="max-w-[200px] "
+                      className="max-w-[100px] "
                       src="https://hypermetropic-pyram.000webhostapp.com/wp-content/uploads/2023/08/widget-curve.jpg"
                       alt=""
                     />
